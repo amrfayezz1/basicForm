@@ -1,0 +1,104 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    outline: none;
+    font-size: large;
+    border: none;
+    border-radius: 4px;
+}
+
+body{
+    background-color: #eee;
+    margin: 10px;
+}
+
+.cont{
+    margin: 5% auto 0 auto;
+    width: 80%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 35px;
+    border: 3px solid white;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+@media (max-width:767px){
+    .cont{
+        display: block;
+    }
+    div{
+        margin: 15px 0;
+    }
+}
+@media (max-width:374px){
+    ::placeholder{
+        font-size: small;
+    }
+}
+
+
+
+.email{
+    grid-column: 1/2;
+    position: relative;
+    top: 10%;
+}
+
+label{
+    position: relative;
+}
+.req::after{
+    content: "*";
+    position: absolute;
+    right: -10px;
+    color: red;
+}
+
+
+.brief{
+    grid-column: 2/3;
+    grid-row: 2/4;
+}
+textarea{
+    width: calc(100% - 20px);
+    margin-top: 15px;
+    padding-top: 15px;
+}
+
+input, label{
+    width: calc(100% - 20px);
+    height: 50px;
+    margin-top: 15px;
+}
+
+input, textarea{
+    box-shadow: 0 3px 2px #ddd;
+    padding-left: 20px;
+}
+
+.submit{
+    grid-column: 1/3;
+}
+input[type='submit']{
+    color: white;
+    width: 100%;
+    background-color: lightseagreen;
+    font-weight: 400;
+    font-size: large;
+}
+
+.vert{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.congrats{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin: 5% auto;
+    align-items: center;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="shortcut icon" href="task.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="done.html" method="get">
+        <div class="cont">
+            <div class="vert">
+                <div class="un">
+                    <label for="un" class="req">Username</label>
+                    <br>
+                    <input type="text" name="un" id="un" placeholder="Type your name in english only">
+                </div>
+                <div class="pass">
+                    <label for="pass" class="req">Password</label>
+                    <br>
+                    <input type="password" name="pass" id="pass" placeholder="Type a complex password">
+                </div>
+                <div class="email">
+                    <label for="email" class="req">Email</label>
+                    <br>
+                    <input type="email" name="email" id="email" placeholder="Type a valid email">
+                </div>
+            </div>
+            <div class="vert">
+                <div class="phone">
+                    <label for="phone">Phone</label>
+                    <br>
+                    <input type="tel" name="phone" id="phone" placeholder="01xxxxxxxxx">
+                </div>
+                <div class="brief">
+                    <label for="brief">Brief</label>
+                    <br>
+                    <textarea name="brief" id="brief" cols="30" rows="8" placeholder="Please enter your feedback"></textarea>
+                </div>
+            </div>
+            <div class="submit">
+                <input type="submit" value="Register">
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
